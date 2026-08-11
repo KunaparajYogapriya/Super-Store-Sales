@@ -1,0 +1,91 @@
+{
+    "sales_model": {
+        "best_model": "Random Forest Regressor",
+        "metrics": {
+            "model_name": "Random Forest Regressor",
+            "MAE": 209.4775,
+            "MSE": 481268.1749,
+            "RMSE": 693.7349,
+            "R2": 0.1853
+        },
+        "comparison": [
+            {
+                "model_name": "Linear Regression",
+                "MAE": 228.4766,
+                "MSE": 481778.6278,
+                "RMSE": 694.1028,
+                "R2": 0.1844
+            },
+            {
+                "model_name": "Random Forest Regressor",
+                "MAE": 209.4775,
+                "MSE": 481268.1749,
+                "RMSE": 693.7349,
+                "R2": 0.1853
+            },
+            {
+                "model_name": "Gradient Boosting Regressor",
+                "MAE": 204.0097,
+                "MSE": 508422.2898,
+                "RMSE": 713.0374,
+                "R2": 0.1393
+            },
+            {
+                "model_name": "XGBoost Regressor",
+                "MAE": 209.41,
+                "MSE": 526768.0193,
+                "RMSE": 725.7879,
+                "R2": 0.1082
+            }
+        ]
+    },
+    "profit_model": {
+        "best_model": "XGBoost Regressor",
+        "metrics": {
+            "model_name": "XGBoost Regressor",
+            "MAE": 21.4748,
+            "MSE": 7257.5343,
+            "RMSE": 85.1912,
+            "R2": 0.8503
+        },
+        "comparison": [
+            {
+                "model_name": "Linear Regression",
+                "MAE": 71.3526,
+                "MSE": 80955.0114,
+                "RMSE": 284.5259,
+                "R2": -0.6697
+            },
+            {
+                "model_name": "Random Forest Regressor",
+                "MAE": 27.428,
+                "MSE": 49868.8492,
+                "RMSE": 223.3133,
+                "R2": -0.0285
+            },
+            {
+                "model_name": "Gradient Boosting Regressor",
+                "MAE": 33.984,
+                "MSE": 43632.3545,
+                "RMSE": 208.8836,
+                "R2": 0.1001
+            },
+            {
+                "model_name": "XGBoost Regressor",
+                "MAE": 21.4748,
+                "MSE": 7257.5343,
+                "RMSE": 85.1912,
+                "R2": 0.8503
+            }
+        ]
+    },
+    "forecasting_model": {
+        "model_name": "SARIMAX(1,1,1)(1,1,0,12)",
+        "metrics": {
+            "MAE": 13411.31,
+            "RMSE": 15989.43,
+            "MAPE": 26.75
+        },
+        "total_historical_months": 48
+    }
+}

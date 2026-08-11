@@ -1,0 +1,266 @@
+/* Superstore Sales Intelligence - High-Contrast SaaS Light Theme CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #0f172a !important;
+}
+
+/* Page Background */
+.stApp, .main {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+}
+
+/* Streamlit Header / Top Bar */
+header[data-testid="stHeader"] {
+    background-color: rgba(248, 250, 252, 0.95) !important;
+    backdrop-filter: blur(8px);
+}
+
+/* Global Typography High-Contrast Overrides */
+p, span, label, li, a, td, th {
+    color: #1e293b;
+}
+
+h1, h2, h3, h4, h5, h6, 
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3,
+[data-testid="stMarkdownContainer"] h4,
+[data-testid="stMarkdownContainer"] h5,
+[data-testid="stMarkdownContainer"] h6 {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] span,
+[data-testid="stMarkdownContainer"] li {
+    color: #334155 !important;
+}
+
+/* Sidebar Styling */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+    border-right: 1px solid #e2e8f0 !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #1e293b !important;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #0f172a !important;
+}
+
+/* Widgets, Form Inputs & Selectboxes */
+label, label[data-testid="stWidgetLabel"], .stWidgetLabel p, [data-testid="stWidgetLabel"] p {
+    color: #0f172a !important;
+    font-weight: 600 !important;
+}
+
+input, select, textarea, div[data-baseweb="input"] input {
+    color: #0f172a !important;
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+}
+
+/* Disabled inputs text visibility fix */
+input:disabled, textarea:disabled, div[data-baseweb="input"]:has(input:disabled), input[disabled] {
+    color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
+    background-color: #f1f5f9 !important;
+    opacity: 1 !important;
+}
+
+div[data-baseweb="select"] * {
+    color: #0f172a !important;
+    background-color: #ffffff !important;
+}
+
+div[role="option"], ul[role="listbox"] li {
+    color: #0f172a !important;
+    background-color: #ffffff !important;
+}
+
+/* Radio buttons & Checkboxes */
+[data-testid="stRadioButton"] label p, [data-testid="stCheckbox"] label p {
+    color: #0f172a !important;
+    font-weight: 500 !important;
+}
+
+/* Tabs contrast fix */
+button[data-baseweb="tab"] * {
+    color: #475569 !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] * {
+    color: #2563eb !important;
+    font-weight: 700 !important;
+}
+
+/* Code block contrast fix */
+code, pre {
+    color: #0f172a !important;
+}
+
+/* Alert boxes fix */
+div[data-testid="stAlert"] * {
+    color: #0f172a !important;
+}
+
+/* Dataframe & Tables */
+.stDataFrame, [data-testid="stTable"], table {
+    color: #0f172a !important;
+    background-color: #ffffff !important;
+}
+
+/* Custom Executive KPI Cards */
+.kpi-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+}
+
+.kpi-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b !important;
+    margin-bottom: 0.5rem;
+}
+
+.kpi-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a !important;
+    line-height: 1.2;
+}
+
+.kpi-subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #10b981 !important;
+    margin-top: 0.35rem;
+}
+
+.kpi-subtitle.negative {
+    color: #ef4444 !important;
+}
+
+/* Feature Capability Cards (Home Page) */
+.feature-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px;
+    padding: 1.75rem;
+    height: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.feature-card h3 {
+    color: #0f172a !important;
+    font-weight: 600 !important;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: #475569 !important;
+    font-size: 0.925rem;
+    line-height: 1.5;
+}
+
+/* Prediction Outcome Display Card (Dark Container Exceptions) */
+.prediction-box {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+    border-radius: 14px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.15);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.prediction-box.profit-positive {
+    background: linear-gradient(135deg, #064e3b 0%, #022c22 100%) !important;
+}
+
+.prediction-box.profit-negative {
+    background: linear-gradient(135deg, #881337 0%, #4c0519 100%) !important;
+}
+
+.prediction-box * {
+    color: #ffffff !important;
+}
+
+.prediction-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #cbd5e1 !important;
+}
+
+.prediction-amount {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: #ffffff !important;
+    margin: 0.5rem 0;
+}
+
+.prediction-subtext, .prediction-subtext b {
+    font-size: 0.95rem;
+    color: #e2e8f0 !important;
+}
+
+/* Section Containers & Headers */
+.section-header {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    letter-spacing: -0.02em;
+}
+
+.section-header p {
+    color: #64748b !important;
+    font-size: 0.975rem;
+}
+
+/* Metric badge chips */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    background-color: #e0f2fe !important;
+    color: #0369a1 !important;
+}
+
+.badge-success {
+    background-color: #d1fae5 !important;
+    color: #047857 !important;
+}
+
+.badge-danger {
+    background-color: #fee2e2 !important;
+    color: #b91c1c !important;
+}
